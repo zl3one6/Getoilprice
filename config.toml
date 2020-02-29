@@ -1,0 +1,11 @@
+[mysql]
+dsn="root:remotesqlrasp@(192.168.31.233)/oilpricedb?charset=utf8mb4&parseTime=True&loc=Local"
+automigrate=false
+max_open_connections=0
+max_idle_connections=2
+
+[redis]
+url="redis://192.168.31.233:6379"
+max_idle=10
+idle_timeout="5m0s"
+max_active=0
