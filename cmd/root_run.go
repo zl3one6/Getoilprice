@@ -61,7 +61,7 @@ func run(cmd *cobra.Command, args []string) {
 	}
 
 	tm := cron.New()
-	spec := "1 0 * * *"
+	spec := "0 1 0 * * ?"
 	err = tm.AddFunc(spec, func() {
 		log.Println("schedule task, start sync data from website")
 		timerCallback()
